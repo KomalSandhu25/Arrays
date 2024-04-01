@@ -21,6 +21,9 @@ Explanation: Increment the first element three times and the second element two 
 public class MostFrequent {
     static int  slidingWindow(int []A, int k) {
         Arrays.sort(A);
+        if(A[0] == A[A.length-1]){
+            return A.length-1;
+        }
         int i = 0, j = 0, N = A.length, sum = 0;
         for (; j < N; ++j) {
             sum += A[j];
@@ -29,6 +32,8 @@ public class MostFrequent {
         return j - i;
     }
     public static void main(String[] args) {
-        System.out.println(slidingWindow(new int[]{1,4,8,13}, 5));
+
+        //System.out.println(slidingWindow(new int[]{1,4,8,13}, 5));
+        System.out.println(slidingWindow(new int[]{1,1,1,1, 100}, 1));
     }
 }
