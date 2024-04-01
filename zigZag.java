@@ -1,5 +1,9 @@
 package arrays;
-
+/*
+Input: N = 7 , arr[] = {4, 3, 7, 8, 6, 2, 1}
+Output: arr[] = {3, 7, 4, 8, 2, 6, 1}
+Explanation: The given array is in zig-zag pattern as we can see 3 < 7 > 4 < 8 > 2 < 6 >1
+ */
 public class zigZag {
     public static void getArray(int arr[]){
         int flag =0;

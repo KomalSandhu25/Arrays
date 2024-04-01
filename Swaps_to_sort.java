@@ -1,6 +1,13 @@
 package arrays;
 import java.util.*;
+/*
+Input: {4, 3, 2, 1}
+Output: 2
+Explanation: Swap index 0 with 3 and 1 with 2 to form the sorted array {1, 2, 3, 4}
 
+Input: {1, 5, 4, 3, 2}
+Output: 2
+ */
 public class Swaps_to_sort {
     public static void min_swaps(int arr[]){
         HashMap<Integer, Integer> sorted_arr = new HashMap<>();

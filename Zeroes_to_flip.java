@@ -3,7 +3,14 @@ package arrays;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+Input:   arr[] = {1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1}
+         m = 2
+Output:  5 7
+We are allowed to flip maximum 2 zeroes. If we flip
+arr[5] and arr[7], we get 8 consecutive 1's which is
+maximum possible under given constraints
+ */
 public class Zeroes_to_flip {
     public static void  flip(int arr[], int m){
         List<Integer> l = new ArrayList<>();
