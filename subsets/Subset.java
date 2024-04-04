@@ -42,5 +42,6 @@ public class Subset {
          List<List<Integer>> x = subsets(new int[]{1,2,3});
         for(int i=0; i<x.size(); i++)
          System.out.println(x.get(i));
+
     }
 }
